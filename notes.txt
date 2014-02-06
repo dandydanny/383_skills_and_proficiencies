@@ -20,3 +20,56 @@ CSS                technical
 Photoshop           creative
 Illustrator         creative
 Responsive-Design   creative
+
+
+
+
+<div class="container">
+  <h1>User Skills and Levels</h1>
+
+  <%# TODO: display the skills and proficiency levels for each user ... %>
+
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>Skill</td>
+      <td>Context</td>
+      <td>Years</td>
+      <td>Formal?</td>
+    </tr>
+    <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <% user.proficiencies.each do |proficiency| %>
+      <td><%= proficiency.skill.name %></td>
+      <td>con</td>
+      <td>yea</td>
+      <td>edu</td>
+      <% end %>
+    </tr>
+    <% end %>
+  </table>
+</div>
+
+
+      <% if proficiency.empty? == true %>
+        <%= "<td>a</td><td>b</td><td>c</td><td>d</td>" %>
+      <% end %>
+
+
+
+      <td><%= proficiency.skill.name %></td>
+      <td><%= proficiency.skill.context %></td>
+      <td><%= proficiency.experience %></td>
+      <td><%= proficiency.education %></td>
+
+
+
+
+      <%= "<td></td>" if user.proficiencies.count > 1 %>
+
+
+
+
+
+

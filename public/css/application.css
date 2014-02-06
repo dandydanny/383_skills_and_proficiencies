@@ -78,16 +78,18 @@ table {
   width: 100%;
 }
 
-tr {
-  border-bottom: 1px solid gray;
+#person {
+  border-top: 1px solid lightgray;
 }
 
 tr:first-child {
   background-color: gray;
-  font-weight: bold;
   color: white;
 }
 
 td {
   padding: 5px;
+  /*border: 1px dotted lightgray;*/
 }
+
+

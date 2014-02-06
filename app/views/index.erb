@@ -12,13 +12,26 @@
       <td>Formal?</td>
     </tr>
     <% @users.each do |user| %>
-    <tr>
+    <tr id="person">
       <td><%= user.name %></td>
-      <td>skillz</td>
-      <td>con</td>
-      <td>yea</td>
-      <td>edu</td>
-    </tr>
+        <!-- If user has no proficiencies, print dashes -->
+        <% if user.proficiencies.count == 0 %>
+        <%= "<td>-</td><td>-</td><td>-</td><td>-</td>" %>
+        <% else %>
+        <!-- Print each proficiencies for that user -->
+        <% user.proficiencies.each_with_index do |proficiency, index| %>
+        <!-- If more than one line of proficiency, insert empty cell before subsequent lines -->
+        <%= "<td></td>" if index >= 1 %>
+        <td><%= proficiency.skill.name %></td>
+        <td><%= proficiency.skill.context %></td>
+        <td><%= proficiency.experience %></td>
+        <td><%= proficiency.education %></td>
+        </tr>
+        <% end %>
+
+        <% end %>
+
+
     <% end %>
   </table>
 </div>

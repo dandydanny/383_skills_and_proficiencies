@@ -1,7 +1,8 @@
 class Proficiency < ActiveRecord::Base
-  # join table
+  # join table, belongs to other models.
+  # model name is lowercase singular
   belongs_to :user
-  belongs_to :skills
+  belongs_to :skill
 
   validates :experience, :presence => true
   # validates :formal_eduaction, inclusion: [true, false]
