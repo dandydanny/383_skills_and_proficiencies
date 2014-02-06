@@ -1,7 +1,6 @@
 Database fields and data
 ------------------------
 
-
 Uesrs: 1-6
 Dev Bootcamp Student
 Frank Abernathy Sr.

@@ -19,3 +19,5 @@ design_skills.each do |skill|
 end
 
 # TODO: create associations between users and skills
+
+# Proficiency.create(:experience => 2, :education => true)
