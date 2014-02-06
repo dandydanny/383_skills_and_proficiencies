@@ -1,18 +1,3 @@
-<li class='active'><a data-toggle='tab' href='#objectives'>
-Objectives
-</a></li>
-<li><a data-toggle='tab' href='#comments'>
-Comments
-</a></li>
-<li><a data-toggle='tab' href='#our_attempts'>
-Your Attempts
-</a></li>
-<li><a data-toggle='tab' href='#all_attempts'>
-Recent Attempts
-</a></li>
-</ul>
-<div class='tab-content'>
-<div class='tab-pane active' id='objectives'>
 <h2 id="toc_0">Objectives</h2>
 
 <p>For this challenge, you&#39;ll be adding some new functionality to a very basic Sinatra+ActiveRecord application. The application in its current form includes:</p>
