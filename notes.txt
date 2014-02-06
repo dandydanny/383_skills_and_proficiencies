@@ -1,0 +1,23 @@
+Database fields and data
+------------------------
+
+
+Uesrs: 1-6
+Dev Bootcamp Student
+Frank Abernathy Sr.
+Marjolaine Jakubowski Jr.
+Bessie Cronin
+Ms. Enoch Mills
+Jerel Marquardt
+
+Skills: 1-10
+Ruby               technical
+Sinatra            technical
+Rails              technical
+JavaScript         technical
+jQuery             technical
+HTML               technical
+CSS                technical
+Photoshop           creative
+Illustrator         creative
+Responsive-Design   creative
